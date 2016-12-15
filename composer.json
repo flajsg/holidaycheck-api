@@ -1,7 +1,7 @@
 {
     "name": "ors/holidaycheck-api",
     "description": "PHP parser for HolidayCheck XML api",
-    "keywords": ["holidaycheck","laravel"],
+    "keywords": ["holidaycheck","api"],
     "license":"MIT",
     "authors": [
         {

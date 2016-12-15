@@ -1,0 +1,23 @@
+{
+    "name": "ors/holidaycheck-api",
+    "description": "PHP parser for HolidayCheck XML api",
+    "keywords": ["holidaycheck","laravel"],
+    "license":"MIT",
+    "authors": [
+        {
+            "name": "ors",
+            "email": "gregor.flajs@ors.si"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*",
+        "openlss/lib-array2xml": "^0.5.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "HC\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

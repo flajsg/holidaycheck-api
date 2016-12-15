@@ -15,7 +15,7 @@ This parser uses ``curl`` to send API requests and ``openlss/lib-array2xml`` for
 
 First create an instance:
 
-  $hc = new \HC\HolidayCheck($partner_token);
+	$hc = new \HC\HolidayCheck($partner_token);
 
 Get detailed information about a hotel (using holiday check unique hotel id):
 
@@ -49,7 +49,85 @@ A list of hotels
 
 A list of hotel ratings:
 
-	$ratings = $hc->hotelRatings(16);
+```php
+$ratings = $hc->hotelRatings(16);
+
+Array
+(
+    [averageRating] => Array
+        (
+            [couple] => 4.95
+            [family] => 5.0
+            [friends] => 5.5
+            [overall] => 4.7
+            [single] => 2.0
+        )
+
+    [foodRating] => Array
+        (
+            [couple] => 5.0
+            [family] => 5.5
+            [friends] => 5.8
+            [overall] => 5.3
+            [single] => 0.0
+        )
+
+    [hotelRating] => Array
+        (
+            [couple] => 5.26667
+            [family] => 5.15
+            [friends] => 5.8
+            [overall] => 4.84286
+            [single] => 2.0
+        )
+
+    [locationRating] => Array
+        (
+            [couple] => 4.4
+            [family] => 4.3
+            [friends] => 4.8
+            [overall] => 4.51429
+            [single] => 5.0
+        )
+
+    [recommendation] => Array
+        (
+            [couple] => 100.0
+            [family] => 100.0
+            [friends] => 100.0
+            [overall] => 88.888885
+            [single] => 0.0
+        )
+
+    [roomRating] => Array
+        (
+            [couple] => 4.66667
+            [family] => 4.75
+            [friends] => 5.3
+            [overall] => 4.68571
+            [single] => 4.0
+        )
+
+    [serviceRating] => Array
+        (
+            [couple] => 5.5
+            [family] => 5.55
+            [friends] => 5.7
+            [overall] => 5.32857
+            [single] => 4.0
+        )
+
+    [sportRating] => Array
+        (
+            [couple] => 4.16667
+            [family] => 4.75
+            [friends] => 5.8
+            [overall] => 4.63333
+            [single] => 0.0
+        )
+
+)
+```
 
 A list of hotel reviews:
 

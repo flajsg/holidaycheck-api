@@ -11,6 +11,8 @@ In order to use this API, you will need Partner Token from HolidayCheck, which w
 
 This parser uses ``curl`` to send API requests and ``openlss/lib-array2xml`` for converting XML to array.
 
+**Important:** Ratings are in range from 0.0 to 6.0. 
+
 ## Basic Usage
 
 First create an instance:
